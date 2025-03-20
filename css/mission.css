@@ -2,7 +2,7 @@ main section:nth-child(2) {
     background-color:#F8FCFF;
     padding: 50px;
     padding-inline: 150px;
-    /* padding-block: 150px; */
+    padding-block: 100px;
   }
 .mission-section{
     display: flex;

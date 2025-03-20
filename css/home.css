@@ -9,7 +9,7 @@
 .main-home-left{
  padding-block: 10%;
  gap: 20px;
- width: 100%;
+ width: 60%;
 
 }
 .main-home-left h1{
@@ -18,7 +18,7 @@
 }
 .main-home-left p{
     margin-block:20px;
-    width: 100%;
+    width: 55%;
     color: rgb(144, 148, 148);
 }
 .main-home-right{
