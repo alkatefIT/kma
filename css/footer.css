@@ -1,0 +1,111 @@
+.footer-bg{
+    background-image: url(https://themewagon.github.io/charityworks/assets/img/gallery/footer_bg.png);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-section{
+    position: relative;
+    padding-inline:50px;
+    padding-block: 5%;
+    color: white;
+    display: flex;
+    gap: 70px;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.footer-address ul{
+    list-style-type: none;
+    line-height: 50px;
+    color: rgb(162, 162, 162);
+}
+.footer-logo h1{
+    font-size: 3rem;
+
+}
+.footer-links ul{
+    list-style-type: none;
+    line-height: 50px;
+    color: rgb(162, 162, 162);
+}
+.footer-newsletter p{
+    color: rgb(162, 162, 162);
+    line-height: 50px;
+
+}
+.email-input{
+    background-color: white;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-block-start: 50px;
+}
+
+.email-input input{
+    border: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+.email-input input::placeholder{
+    padding-inline-start: 20px;
+}
+.email-input button{
+    background-color:#0BCC7F;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+    width: 50px;
+    height: 40px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: rgb(143, 143, 143);
+
+}
+
+.copyright-details{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-inline: 50px;
+    padding-block: 50px;
+    width: 60%;
+    border-top: 1px solid rgb(85, 85, 85);
+}
+
+.copyright-icons a{
+ text-decoration:none ;
+ color: inherit;
+ font-size: 1rem;
+ padding: 10px;
+}
+
+@media screen and (max-width:768px) {
+
+    .footer-section{
+        gap: 40px;
+    }
+    .footer-logo h1{
+        font-size: 1.8rem;
+    }
+    .footer-address ul{
+        line-height: 30px;
+    }
+    .footer-links ul{
+        line-height: 30px;
+    }
+    .footer-newsletter p{
+        line-height: 30px;
+    }
+}

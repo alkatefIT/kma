@@ -1,0 +1,167 @@
+main section:nth-child(6) {
+    background-color:#F8FCFF;
+    padding: 50px;
+    padding-block: 100px;
+  }
+
+  .team-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.team-section > h1{
+    font-size: 1.2rem;
+    font-weight:500 ;
+    color: #33df9a;
+}
+.team-section h3{
+    font-size: 2.5rem;
+}
+.all-team-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-block: 50px;
+    gap: 30px;
+}
+
+.team-card{
+    position: relative;
+    background-color: white;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.team-card-img{
+    overflow: hidden;
+
+}
+.team-social{
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+.team-social ul{
+    display: flex;
+    gap: 10px;
+}
+
+.team-card:hover .team-social ul li:nth-child(1) {
+     animation: fadeIn 0.5s ease forwards; 
+        }
+.team-card:hover .team-social ul li:nth-child(2) {
+     animation: fadeIn 0.5s ease forwards 0.2s; 
+    }
+.team-card:hover .team-social ul li:nth-child(3) {
+     animation: fadeIn 0.5s ease forwards 0.4s; 
+    }
+
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0;
+         transform: translateY(20px); 
+        }
+
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+.team-card-img img{
+    transition: transform 0.5s;
+    transform: scale(1);
+}
+
+.team-card:hover .team-card-img img {
+    transform: scale(1.1);
+}
+.team-social li{
+    list-style-type: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    opacity: 0;
+
+}
+.team-social li a{
+    text-decoration: none;
+    color: inherit;
+
+}
+.team-details{
+    margin-block-end: 20px;
+}
+/*/////////////// aim box/////////////// */
+
+.aim-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 100px;
+    }
+    
+    .aim-box{
+        display: flex;
+        height: auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: center;
+        width: 65%;
+        padding-inline: 50px;
+        padding-block: 40px;
+        background-repeat: no-repeat;
+        background-size:cover ;
+        background-attachment: fixed;
+        background-position:center center ;
+        background-image: url(https://themewagon.github.io/charityworks/assets/img/gallery/section_bg01.png);
+    }
+    .aim-box h1{
+        font-size: 2rem;
+        color: white;
+        line-height: 50px;
+        width: 50%;
+    }
+    .aim-box button{
+        padding-inline: 50px;
+        padding-block:20px ;
+        border: 0;
+    }
+    @media screen and (max-width:768px) {
+        main section:nth-child(6) {
+            padding-block: 50px;
+             padding:0px;
+
+          }
+        .team-section h3{
+            font-size: var(--section-heading2);
+        }
+        .team-card{
+            width:85%;
+
+        }
+
+        .aim-section{
+            margin-block: 50px;
+            }
+            .aim-box h1{
+                width: 100%;
+            }
+    }
+

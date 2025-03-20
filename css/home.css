@@ -1,0 +1,69 @@
+.main-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-inline: 30px;
+    margin-block-start: 100px;
+}
+.main-home-left{
+ padding-block: 10%;
+ gap: 20px;
+ width: 60%;
+
+}
+.main-home-left h1{
+    font-size:4rem ;
+    font-weight: 800;
+}
+.main-home-left p{
+    margin-block:20px;
+    width: 55%;
+    color: rgb(144, 148, 148);
+}
+.main-home-right{
+    position: relative;
+
+}
+.main-home-right-img2 img{
+    position: absolute;
+    top: 40%;
+    left: -40%;
+}
+.donate-contact button{
+    padding-inline: 2.5rem;
+    padding-block:1.2rem;
+    background-color:#33df9a;
+    color: white;
+    border: 0;
+
+}
+.donate-contact{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.donate-contact-no {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.donate-contact-no i{
+    color:#19dd8e;
+}
+@media screen and (max-width:768px) {
+    .main-home-left h1{
+        font-size:2.5rem ;
+
+    }
+    .main-home-right-img2 img{
+        position: absolute;
+        top: 36%;
+        left: 0%;
+    }
+
+    .main-home-left p{
+    width: 100%;
+
+    }
+}

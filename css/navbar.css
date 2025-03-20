@@ -1,0 +1,127 @@
+.logo-heading h1{
+    font-size: 3rem;
+}
+.logo-heading {
+    padding-inline-start: 3rem;
+
+}
+.logo-heading img {
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: .5rem;
+    background-color: white;
+    box-shadow: 0px 10px 10px -5px rgba(86, 85, 85, 0.5);
+    
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+.nav-links{
+    padding-inline-end: 3rem;
+    
+}
+
+.hidden {
+    top: -120px; 
+}
+#menu-list {
+    font-size: 1.1rem;
+    gap: 4rem;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+#menu-list li >a {
+    color:rgb(58, 58, 58);
+    text-decoration: none;
+}
+#menu-list li >a:hover {
+    color: #33df9a;;
+    text-decoration: none;
+}
+#menu-list button{
+    padding-inline: 2.5rem;
+    padding-block: 1.2rem;
+    background-color:#33df9a;
+    border: 0;
+    color: white;
+
+}
+
+.menu-button {
+    color: #33df9a;
+    background-color: #33df9a00;
+    border: 0;
+    font-size: 2rem;
+    display: none;
+}
+.active{
+    color: #33df9a;
+}
+
+@media screen and (max-width:991px) {
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: 1.5rem;
+        background-color: white;
+        box-shadow: 0px 10px 10px -5px rgba(86, 85, 85, 0.5);
+    }
+    .nav-links{
+        padding-inline-end: 3rem;
+        
+    }
+    #menu-list{
+        position: absolute;
+        top:6.5rem;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+        overflow: hidden;
+        transition: all 0.5s;
+        z-index: 15555;
+    }
+    .menu-button {
+        display: block;
+    }
+    #menu-list button{
+        margin-block-end: 20px;
+
+    }
+    .menu-home-li{
+        margin-block-start: 20px;
+    }
+    #menu-list li >a {
+        color:rgb(255, 255, 255);
+    }
+ 
+}
+@media screen and (max-width:786px) {
+    .logo-heading h1{
+        font-size: 2rem;
+    }    
+    .menu-button {
+        font-size: 1.5rem;
+    }
+    nav{
+        padding-block: 1rem;
+    }
+    #menu-list{
+        top:7.5rem;
+    }
+}
