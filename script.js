@@ -149,7 +149,7 @@ window.onload = function() {
 
 window.addEventListener('scroll', function() {
     // Adjust this value to the scroll position where you want to start the animation
-    const scrollTriggerValue = 5750; 
+    const scrollTriggerValue = 4750; 
 
     // Check if the scroll position is greater than or equal to the trigger value and the animation hasn't started yet
     if (window.scrollY >= scrollTriggerValue && !animationStarted) {
