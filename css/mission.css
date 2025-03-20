@@ -16,6 +16,7 @@ main section:nth-child(2) {
     font-size: 1.2rem;
     font-weight:500 ;
     color: #33df9a;
+    width: 200px;
 }
 .mission-section h3{
     font-size: 2.5rem;
@@ -24,6 +25,7 @@ main section:nth-child(2) {
 .mission-section ul li {
   text-align: left;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .mission-icon{
@@ -99,6 +101,8 @@ main section:nth-child(2) {
   @media screen and (max-width:768px) {
     main section:nth-child(2) {
       padding-block: 50px;
+      padding-inline: 50px;
+
     }
     .mission-section h3{
       font-size: var(--section-heading2);
