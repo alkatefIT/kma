@@ -12,7 +12,7 @@
     color: white;
     display: flex;
     gap: 70px;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: start;
     flex-wrap: wrap;
 }
@@ -22,9 +22,22 @@
     line-height: 50px;
     color: rgb(162, 162, 162);
 }
-.footer-logo h1{
-    font-size: 3rem;
-
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.footer-logo img {
+    width: 80px;
+    height: 80px;
+}
+.footer-logo h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: white;
 }
 .footer-links ul{
     list-style-type: none;

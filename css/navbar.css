@@ -1,23 +1,26 @@
-.logo-heading h1{
+.logo-heading h1 {
     font-size: 3rem;
 }
+
 .logo-heading {
     padding-inline-start: 3rem;
 
 }
+
 .logo-heading img {
     object-fit: cover;
     width: 80px;
     height: 80px;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-block: .5rem;
     background-color: white;
     box-shadow: 0px 10px 10px -5px rgba(86, 85, 85, 0.5);
-    
+
 }
 
 nav {
@@ -28,14 +31,16 @@ nav {
     z-index: 1000;
     transition: top 0.3s;
 }
-.nav-links{
+
+.nav-links {
     padding-inline-end: 3rem;
-    
+
 }
 
 .hidden {
-    top: -120px; 
+    top: -120px;
 }
+
 #menu-list {
     font-size: 1.1rem;
     gap: 4rem;
@@ -43,18 +48,22 @@ nav {
     display: flex;
     align-items: center;
 }
-#menu-list li >a {
-    color:rgb(58, 58, 58);
+
+#menu-list li>a {
+    color: rgb(58, 58, 58);
     text-decoration: none;
 }
-#menu-list li >a:hover {
-    color: #33df9a;;
+
+#menu-list li>a:hover {
+    color: #33df9a;
+    ;
     text-decoration: none;
 }
-#menu-list button{
+
+#menu-list button {
     padding-inline: 2.5rem;
     padding-block: 1.2rem;
-    background-color:#33df9a;
+    background-color: #33df9a;
     border: 0;
     color: white;
 
@@ -67,12 +76,34 @@ nav {
     font-size: 2rem;
     display: none;
 }
-.active{
+
+.active {
     color: #33df9a;
 }
 
+.contact-link  {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+.contact-link a {
+    text-decoration: None;
+    color: rgb(58, 58, 58);
+    font-size: 2rem;
+
+}
+.contact-link button {
+    padding-inline: 2.5rem;
+    padding-block: 1.2rem;
+    background-color: #33df9a;
+    border: 0;
+    color: white;
+
+}
+
 @media screen and (max-width:991px) {
-    nav{
+    nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -80,13 +111,15 @@ nav {
         background-color: white;
         box-shadow: 0px 10px 10px -5px rgba(86, 85, 85, 0.5);
     }
-    .nav-links{
+
+    .nav-links {
         padding-inline-end: 3rem;
-        
+
     }
-    #menu-list{
+
+    #menu-list {
         position: absolute;
-        top:6.5rem;
+        top: 6.5rem;
         left: 0;
         right: 0;
         flex-direction: column;
@@ -96,37 +129,46 @@ nav {
         transition: all 0.5s;
         z-index: 15555;
     }
+
     .menu-button {
         display: block;
     }
-    #menu-list button{
+
+    #menu-list button {
         margin-block-end: 20px;
 
     }
-    .menu-home-li{
+
+    .menu-home-li {
         margin-block-start: 20px;
     }
-    #menu-list li >a {
-        color:rgb(255, 255, 255);
+
+    #menu-list li>a {
+        color: rgb(255, 255, 255);
     }
- 
+
 }
+
 @media screen and (max-width:786px) {
-    .logo-heading h1{
+    .logo-heading h1 {
         font-size: 2rem;
-    } 
+    }
+
     .logo-heading img {
         object-fit: cover;
         width: 50px;
         height: 50px;
-    }   
+    }
+
     .menu-button {
         font-size: 1.5rem;
     }
-    nav{
+
+    nav {
         padding-block: 1rem;
     }
-    #menu-list{
-        top:5.5rem;
+
+    #menu-list {
+        top: 5.5rem;
     }
 }
