@@ -203,3 +203,56 @@ document.getElementById("back-top").addEventListener("click", function (event) {
     behavior: "smooth", // Smooth scroll behavior
   });
 });
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// const API_URL = "https://donation.4edutech.com/api/tag-assignments?UAE-KMA%20Committee";
+
+// async function fetchTeamMembers() {
+//   try {
+//     const response = await fetch(API_URL);
+//     if (!response.ok) throw new Error("Failed to fetch data");
+//     const data = await response.json();
+
+//     console.log("API Response:", data); // Debugging - Check API response
+
+//     // ✅ Use `data` directly instead of `data.data`
+//     const teamMembers = data || [];
+
+//     const teamContainer = document.getElementById("team-container");
+//     teamContainer.innerHTML = "";
+
+//     teamMembers.forEach(member => {
+//       // ✅ Ensure filtering only members from "UAE-KMA Committee"
+//         const teamCard = document.createElement("div");
+//         teamCard.classList.add("team-card");
+//         teamCard.innerHTML = `
+//                     <div class="team-card-img">
+//                         <img src="${member.photo || 'https://via.placeholder.com/250'}" alt="${member.name}" />
+//                                     <div class="team-social">
+//           <ul>
+//             <li>
+//               <a href="#"><i class="fab fa-facebook-f"></i></a>
+//             </li>
+//             <li>
+//               <a href="#"><i class="fab fa-twitter"></i></a>
+//             </li>
+//             <li>
+//               <a href="#"><i class="fas fa-globe"></i></a>
+//             </li>
+//           </ul>
+//         </div>
+//                     </div>
+//                     <div class="team-details">
+//                         <h1>${member.name || 'Unknown'}</h1>
+//                         <p>${member.title || 'Volunteer'}</p>
+//                     </div>
+//                 `;
+//         teamContainer.appendChild(teamCard);
+//     });
+//   } catch (error) {
+//     console.error("Error fetching team members:", error);
+//   }
+// }
+
+// fetchTeamMembers();
