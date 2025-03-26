@@ -4,8 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:image" content="https://alkatefit.github.io/kma/assets/kma_logo.jpg">
   <link rel="icon" type="image/png" href="./assets/kma_logo.png">
+  
   <title>KMA (കോടമ്പുഴ മുസ്ലിം അസ്സോസിയേഷൻ)</title>
+
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./css/navbar.css" />
   <link rel="stylesheet" href="./css/home.css" />
@@ -600,9 +603,9 @@
 
         teamMembers.forEach(member => {
           // ✅ Ensure filtering only members from "UAE-KMA Committee"
-            const teamCard = document.createElement("div");
-            teamCard.classList.add("team-card");
-            teamCard.innerHTML = `
+          const teamCard = document.createElement("div");
+          teamCard.classList.add("team-card");
+          teamCard.innerHTML = `
                         <div class="team-card-img">
                             <img src="${member.photo || 'https://via.placeholder.com/250'}" alt="${member.name}" />
                                         <div class="team-social">
@@ -624,7 +627,7 @@
                             <p>${member.title || 'Volunteer'}</p>
                         </div>
                     `;
-            teamContainer.appendChild(teamCard);
+          teamContainer.appendChild(teamCard);
         });
       } catch (error) {
         console.error("Error fetching team members:", error);
