@@ -54,6 +54,10 @@ input[type="email"] {
     align-items: start;
     gap: 30px;
 }
+.address h1 a{
+text-decoration: none;
+color: inherit;
+}
 .address > div > i {
     color: rgb(107, 107, 107);
 }
