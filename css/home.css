@@ -25,6 +25,13 @@
     position: relative;
 
 }
+.main-home-right-img{
+    width: 400px;
+}
+.main-home-right-img img{
+    object-fit: cover;
+    width: 100%;
+}
 .main-home-right-img2 img{
     position: absolute;
     top: 40%;
