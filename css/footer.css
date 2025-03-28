@@ -22,6 +22,12 @@
     line-height: 50px;
     color: rgb(162, 162, 162);
 }
+.footer-address ul li a{
+    text-decoration: none;
+    list-style-type: none;
+    line-height: 50px;
+    color: rgb(162, 162, 162);
+}
 .footer-logo {
     display: flex;
     justify-content: center;
