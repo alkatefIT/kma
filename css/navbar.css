@@ -61,11 +61,14 @@ nav {
 }
 
 #menu-list button {
-    padding-inline: 2.5rem;
-    padding-block: 1.2rem;
+    padding-inline: 2rem;
+    padding-block: 1rem;
     background-color: #33df9a;
     border: 0;
+    border-radius: 10px;
     color: white;
+    font-size: 1rem;
+    font-weight: 600;
 
 }
 
@@ -81,18 +84,20 @@ nav {
     color: #33df9a;
 }
 
-.contact-link  {
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 20px;
+.contact-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
+
 .contact-link a {
     text-decoration: None;
     color: rgb(58, 58, 58);
     font-size: 2rem;
 
 }
+
 .contact-link button {
     padding-inline: 2.5rem;
     padding-block: 1.2rem;

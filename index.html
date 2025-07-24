@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:image" content="https://alkatefit.github.io/kma/assets/kma_logo.jpg">
   <link rel="icon" type="image/png" href="./assets/kma_logo.png">
-  
+
   <title>KMA (കോടമ്പുഴ മുസ്ലിം അസ്സോസിയേഷൻ)</title>
 
   <link rel="stylesheet" href="./style.css" />
@@ -50,13 +50,13 @@
         <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
       </div>
       <ul id="menu-list">
-        <li class="menu-home-li"><a href="#">Home</a></li>
+        <li class="menu-home-li"><a href="#" style="color: #33df9a ;">Home</a></li>
         <!-- <li><a href="./pages/about.html" onclick="setActiveLink('about')">About</a></li>
         <li><a href="./pages/blog.html" onclick="setActiveLink('blog')">Blog</a></li> -->
         <li>
           <a href="./pages/contact.html" onclick="setActiveLink('contact')">Contact Us</a>
         </li>
-        <button>Donate</button>
+        <button>Login</button>
       </ul>
     </div>
   </nav>
@@ -82,7 +82,9 @@
           <div class="donate-contact">
             <button>Donate</button>
             <div class="donate-contact-no">
-              <i class="fa-solid fa-phone-volume"></i>+12 1345 45
+              <a href="tel:+919846002494">
+                <i class="fa-solid fa-phone-volume"></i> +91 9846002494
+              </a>
             </div>
           </div>
         </div>
@@ -90,9 +92,6 @@
           <div class="main-home-right-img">
             <img src="./assets/collaboration.jpg" alt="" />
           </div>
-          <!-- <div class="main-home-right-img2">
-            <img src="https://themewagon.github.io/charityworks/assets/img/gallery/about2.png" alt="" />
-          </div> -->
         </div>
       </div>
     </section>
@@ -102,42 +101,10 @@
 
 
     <!-- mission section -->
-    <section>
+    <!-- <section>
       <div class="mission-section">
         <h1>What We Are Doing</h1>
 
-        <!-- <h3>
-          We Are In A Mission To <br />
-          Help The Helpless
-        </h3> -->
-        <!-- <div class="all-mission-box">
-          <div class="mission-box">
-            <i class="mission-icon mb4 fa-solid fa-gear"></i>
-            <h1>Clean Water</h1>
-            <p>
-              The sea freight service has grown conside rably in recent years.
-              We spend timetting to know your processes to.
-            </p>
-          </div>
-
-          <div class="mission-box mb2 mb4">
-            <i class="mission-icon mb3 fa-solid fa-laptop-file"></i>
-            <h1>Clean Water</h1>
-            <p>
-              The sea freight service has grown conside rably in recent years.
-              We spend timetting to know your processes to.
-            </p>
-          </div>
-
-          <div class="mission-box">
-            <i class="mission-icon mb4 fa-solid fa-laptop-file"></i>
-            <h1>Clean Water</h1>
-            <p>
-              The sea freight service has grown conside rably in recent years.
-              We spend timetting to know your processes to.
-            </p>
-          </div>
-        </div> -->
 
         <ul>
           <li>യു എ ഇ യിലും മറ്റു വിദേശ രാജ്യങ്ങളിലും വസിക്കുന്ന കോടമ്പുഴ പ്രദേശത്തെ പ്രവാസികളെ പരസ്പരം ബന്ധപ്പെടുത്തി
@@ -160,7 +127,74 @@
             പ്രവർത്തനങ്ങളും പദ്ധതികളും നിർവഹിച്ചു നടപ്പിലാക്കുന്നത്.</li>
         </ul>
       </div>
+    </section> -->
+
+
+    <section>
+      <div class="mission-section">
+        <h1>What We Are Doing</h1>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" onclick="toggleDetail(this)">പ്രവാസികളുടെ കൂട്ടായ്മ</button>
+          <div class="accordion-content">
+            <p>യു എ ഇ യിലും മറ്റു വിദേശ രാജ്യങ്ങളിലും വസിക്കുന്ന കോടമ്പുഴ പ്രദേശത്തെ പ്രവാസികളെ പരസ്പരം ബന്ധപ്പെടുത്തി
+              സൗഹൃദം സ്ഥാപിച്ച് അവരുടെ പ്രശ്നങ്ങളിലും പ്രയാസങ്ങളിലും ഈ കൂട്ടായ്മ താങ്ങും തണലുമായി വർത്തിക്കുന്നു.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" onclick="toggleDetail(this)">ഇൻവെസ്റ്റ്മെന്റ് പദ്ധതികൾ</button>
+          <div class="accordion-content">
+            <p>മെമ്പർമാരുടെ ഭാവി സുരക്ഷക്കാവശ്യമായ സേവിങ് & ഇൻവെസ്റ്റ്മെന്റ് പദ്ധതികൾ ആവിഷ്കരിച്ച് നടപ്പിലാക്കി വരുന്നു.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" onclick="toggleDetail(this)">പലിശ രഹിത വായ്പ</button>
+          <div class="accordion-content">
+            <p>മെമ്പർമാരുടെ അടിയന്തിര സാമ്പത്തിക ആവശ്യങ്ങൾ നിറവേറ്റുന്നതിനു സഹായകമായി പലിശ രഹിത വായ്പ പദ്ധതി
+              ആവിഷ്കരിച്ച് നടപ്പിലാക്കി വരുന്നു.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" onclick="toggleDetail(this)">കുടുംബ ക്ഷേമ സഹായങ്ങൾ</button>
+          <div class="accordion-content">
+            <p>മെമ്പമാരുടെയും കുടുംബാംഗങ്ങളുടെയും ചികിത്സ, വിദ്യാഭ്യാസം, തൊഴിൽ, കിടപ്പാടം തുടങ്ങി വിവിധ മേഖലകളിലെ
+              ആവശ്യങ്ങൾ നിറവേറ്റുന്നതിന് സഹായകമായ ക്ഷേമ പദ്ധതികൾ ആവിഷ്കരിച്ച് നടപ്പിലാക്കി വരുന്നു.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" onclick="toggleDetail(this)">മത, സാമൂഹിക, സാംസ്കാരിക മേഖലകളിൽ
+            പ്രവര്‍ത്തനം</button>
+          <div class="accordion-content">
+            <p>കോടമ്പുഴ പ്രദേശത്തെ മത, സാമൂഹിക, സാംസ്കാരിക, ആരോഗ്യ, വിദ്യാഭ്യാസ, ജീവകാരുണ്യ മേഖലകളിൽ ശ്രദ്ധേയമായ
+              ഇടപെടലുകൾ നടത്തി വരുന്നു.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" onclick="toggleDetail(this)">പ്രവാസി സഹായ സാന്നിധ്യം</button>
+          <div class="accordion-content">
+            <p>ജോലി തേടി യു എ ഇ യിലും മറ്റു വിദേശരാജ്യങ്ങളിലും എത്തുന്ന കോടമ്പുഴക്കാർക്ക് സാധ്യമായ സഹായസഹകരണങ്ങൾ നൽകി
+              വരുന്നു.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" onclick="toggleDetail(this)">സംഘടനയുടെ നേതൃത്വം & പ്രവർത്തനഘടന</button>
+          <div class="accordion-content">
+            <p>കോടമ്പുഴക്കാരായ യു എ ഇ റെസിഡൻസ് വിസയുള്ളവരുടെ നേതൃത്വത്തിൽ രൂപീകരിക്കപ്പെട്ട ഒരു കമ്മിറ്റിയാണ് യു എ ഇ -
+              കെ എം എ എന്ന ഈ കൂട്ടായ്മയെ നിയന്ത്രിക്കുന്നത്. പ്രവാസം അവസാനിപ്പിച്ച് നാട്ടിൽ സ്ഥിര താമസമാക്കിയ
+              മെമ്പർമാരുടെ നേതൃത്വത്തിൽ രൂപീകരിക്കപ്പെട്ട കെ എം എ കോടമ്പുഴ ചാപ്റ്റർ കമ്മിറ്റിയാണ് യു എ ഇ - കെ എം എ യുടെ
+              പ്രവർത്തനങ്ങളും പദ്ധതികളും നിർവഹിച്ചു നടപ്പിലാക്കുന്നത്.</p>
+          </div>
+        </div>
+      </div>
     </section>
+
 
     <!-- About Section -->
     <!-- <section>
@@ -200,11 +234,12 @@
     <!-- works -->
     <section>
       <div class="work-section">
-        <h1>Our Cases You Can See</h1>
-        <h3>
+
+        <h1>Explore Our Latest Causes That We Works</h1>
+        <!-- <h3>
           Explore Our Latest Causes <br />
           That We Works
-        </h3>
+        </h3> -->
       </div>
 
       <div class="all-work-box">
@@ -213,10 +248,6 @@
             <img src="https://themewagon.github.io/charityworks/assets/img/gallery/case1.png" alt="" />
           </div>
           <h1>Ensure Education For Every Poor Children</h1>
-          <!-- <div class="progress-container">
-            <div class="progress-bar"></div>
-            <div class="progress-text">70%</div>
-          </div> -->
           <div class="work-price">
             <p>Raised: <b>$20,000</b></p>
             <p>Goal: <b>$35,000</b></p>
@@ -228,12 +259,6 @@
             <img src="https://themewagon.github.io/charityworks/assets/img/gallery/case2.png" alt="" />
           </div>
           <h1>Ensure Education For Every Poor Children</h1>
-
-          <!-- <div class="progress-container"> -->
-          <!-- <div class="progress-bar2"></div> -->
-          <!-- <div class="progress-text">20%</div> -->
-          <!-- </div> -->
-
           <div class="work-price">
             <p>Raised: <b>$20,000</b></p>
             <p>Goal: <b>$35,000</b></p>
@@ -246,10 +271,6 @@
           </div>
           <h1>Ensure Education For Every Poor Children</h1>
 
-          <!-- <div class="progress-container"> -->
-          <!-- <div class="progress-bar3"></div> -->
-          <!-- <div class="progress-text">56%</div> -->
-          <!-- </div> -->
 
           <div class="work-price">
             <p>Raised: <b>$20,000</b></p>
@@ -319,16 +340,31 @@
     <!-- team section -->
     <section>
       <div class="team-section">
-        <h1>What We Are Doing</h1>
-        <h3>
+        <h1>Our Expert Volunteer Always Ready</h1>
+        <!-- <h3>
           Our Expert Volunteer <br />
           Always Ready
-        </h3>
+        </h3> -->
       </div>
 
       <div id="team-container" class="all-team-card">
 
-        <!-- <div class="team-card">
+      </div>
+
+
+      <table border="1" cellspacing="0" cellpadding="8">
+        <thead>
+          <tr>
+            <th>INDIA (KMA Kodampuzha Chapter Committee)</th>
+            <th>UAE (UAE-KMA Committee)</th>
+          </tr>
+        </thead>
+        <tbody id="team-table-body">
+          <!-- Filled by JS -->
+        </tbody>
+      </table>
+
+      <!--        <div class="team-card">
           <div class="team-card-img">
             <img src="https://themewagon.github.io/charityworks/assets/img/gallery/team2.png" alt="" />
             <div class="team-social">
@@ -348,9 +384,10 @@
           <div class="team-details">
             <h1>Bruce Roberts</h1>
             <p>Volunteer leader</p>
+            <p>Number</p>
           </div>
         </div>
-
+ 
         <div class="team-card">
           <div class="team-card-img">
             <img src="https://themewagon.github.io/charityworks/assets/img/gallery/team3.png" alt="" />
@@ -396,14 +433,12 @@
             <p>Volunteer leader</p>
           </div>
         </div> -->
-        <!-- Team cards will be inserted here dynamically -->
-      </div>
-
+      <!-- Team cards will be inserted here dynamically -->
 
 
       <div class="aim-section">
         <div class="aim-box">
-          <h1>Lets Change The World With Humanity</h1>
+          <h1>Let's Change The World With Humanity</h1>
           <button>Become A Volunteer</button>
         </div>
       </div>
@@ -539,8 +574,8 @@
             <li>
               Address : 1/40A, Kodampuzha, Farook College Post, <br />
               PIN 673632, Kozhikode Dt., Kerala - India </li>
-              <li><a href="tel:9846002494">Phone: 9846002494</a></li>
-              <li><a href="mailto:uaekma@gmail.com">Email: uaekma@gmail.com</a></li>
+            <li><a href="tel:9846002494">Phone: 9846002494</a></li>
+            <li><a href="mailto:uaekma@gmail.com">Email: uaekma@gmail.com</a></li>
           </ul>
         </div>
 
@@ -586,54 +621,118 @@
   <script>
     const API_URL = "https://donation.4edutech.com/api/tag-assignments?UAE-KMA%20Committee";
 
+
+    const titlePriority = [
+      'President',
+      'General Secretary',
+      'Secretary',
+      'Treasurer',
+      'Vice President',
+      'Joint Secretary',
+      'Executive Member'
+    ];
+
+    function getPriority(title) {
+      const lower = title.toLowerCase();
+      const index = titlePriority.findIndex(t => lower.includes(t.toLowerCase()));
+      return index === -1 ? 999 : index;
+    }
+
     async function fetchTeamMembers() {
       try {
         const response = await fetch(API_URL);
-        if (!response.ok) throw new Error("Failed to fetch data");
         const data = await response.json();
 
-        console.log("API Response:", data); // Debugging - Check API response
-
-        // ✅ Use `data` directly instead of `data.data`
         const teamMembers = data || [];
 
-        const teamContainer = document.getElementById("team-container");
-        teamContainer.innerHTML = "";
+        const indiaMembers = teamMembers
+          .filter(m => m.grp === 'KMA Kodampuzha Chapter Committee')
+          .filter((v, i, a) =>
+            i === a.findIndex(t => t.user_id === v.user_id && t.title === v.title)
+          )
+          .sort((a, b) => getPriority(a.title) - getPriority(b.title));
 
-        teamMembers.forEach(member => {
-          // ✅ Ensure filtering only members from "UAE-KMA Committee"
-          const teamCard = document.createElement("div");
-          teamCard.classList.add("team-card");
-          teamCard.innerHTML = `
-                        <div class="team-card-img">
-                            <img src="${member.photo || 'https://via.placeholder.com/250'}" alt="${member.name}" />
-                                        <div class="team-social">
-              <ul>
-                <li>
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fas fa-globe"></i></a>
-                </li>
-              </ul>
-            </div>
-                        </div>
-                        <div class="team-details">
-                            <h1>${member.name || 'Unknown'}</h1>
-                            <p>${member.title || 'Volunteer'}</p>
-                        </div>
-                    `;
-          teamContainer.appendChild(teamCard);
-        });
-      } catch (error) {
-        console.error("Error fetching team members:", error);
+        const uaeMembers = teamMembers
+          .filter(m => m.grp === 'UAE-KMA Committee')
+          .filter((v, i, a) =>
+            i === a.findIndex(t => t.user_id === v.user_id && t.title === v.title)
+          )
+          .sort((a, b) => getPriority(a.title) - getPriority(b.title));
+
+        const maxRows = Math.max(indiaMembers.length, uaeMembers.length);
+        const tableBody = document.getElementById('team-table-body');
+
+        for (let i = 0; i < maxRows; i++) {
+          const india = indiaMembers[i];
+          const uae = uaeMembers[i];
+
+          const row = document.createElement('tr');
+
+          row.innerHTML = `
+  <td>
+    ${india ? `
+      <div class="person-card">
+        <img src="${india.photo}" alt="${india.name}" width="100" height="120" style="border-radius: 2%;" />
+        <div>
+          <div style="font-weight: bold;">${india.name}</div>
+          <div style="font-size: 14px; color: #555;">${india.title}</div>
+          ${india.number ? `<div style="font-size: 12px; color: #888;">${india.number}</div>` : ''}
+        </div>
+      </div>
+    ` : ''}
+  </td>
+  <td>
+    ${uae ? `
+      <div class="person-card">
+        <img src="${uae.photo}" alt="${uae.name}" width="100" height="120" style="border-radius: 2%;" />
+        <div>
+          <div style="font-weight: bold;">${uae.name}</div>
+          <div style="font-size: 14px; color: #555;">${uae.title}</div>
+          ${uae.number ? `<div style="font-size: 12px; color: #888;">${uae.number}</div>` : ''}
+        </div>
+      </div>
+    ` : ''}
+  </td>
+`;
+
+          tableBody.appendChild(row);
+        }
+
+      } catch (err) {
+        console.error("Failed to fetch members:", err);
       }
     }
 
     fetchTeamMembers();
+
+
+
+    // function toggleDetail(button) {
+    //   const detail = button.previousElementSibling;
+    //   const isVisible = detail.style.display === 'inline';
+
+    //   detail.style.display = isVisible ? 'none' : 'inline';
+    //   button.textContent = isVisible ? 'Read More' : 'Read Less';
+    // }
+
+    function toggleDetail(button) {
+      const item = button.closest('.accordion-item');
+      const content = item.querySelector('.accordion-content');
+
+      const isOpen = item.classList.contains('active');
+
+      // Close all if needed
+      document.querySelectorAll('.accordion-item').forEach((el) => {
+        el.classList.remove('active');
+        el.querySelector('.accordion-content').style.maxHeight = null;
+      });
+
+      // Toggle the clicked one
+      if (!isOpen) {
+        item.classList.add('active');
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    }
   </script>
 
 </body>
