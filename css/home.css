@@ -44,41 +44,6 @@ main section:nth-child(1) {
     width: 100%;
 }
 
-.main-home-right-img2 img {
-    position: absolute;
-    top: 40%;
-    left: -40%;
-}
-
-.donate-contact button {
-    padding-inline: 2.5rem;
-    padding-block: 1.2rem;
-    background-color: #33df9a;
-    color: white;
-    border: 0;
-
-}
-
-.donate-contact {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.donate-contact-no {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-.donate-contact-no a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.donate-contact-no i {
-    color: #19dd8e;
-}
 
 @media screen and (max-width:768px) {
     .main-home {

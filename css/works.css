@@ -1,13 +1,14 @@
-main section:nth-child(3) {
+main section:nth-child(4) {
+    background-color: #F8FCFF;
+
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  text-align: start;
+  text-align: flex-start;
 }
 
 .work-section {
-  /* padding-inline-start: 30px; */
   margin-block: 30px;
   width: 100%;
   max-width: 62rem;
@@ -32,7 +33,7 @@ main section:nth-child(3) {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-inline-end: 30px;
+  gap: 20px;
 }
 
 .work-box {
@@ -129,8 +130,8 @@ main section:nth-child(3) {
   color: green;
 }
 
-@media screen and (max-width:768px) {
-  main section:nth-child(3) {
+@media screen and (max-width:1000px) {
+  main section:nth-child(4) {
     padding: 25px;
     padding-block-end: 50px;
   }
@@ -139,4 +140,64 @@ main section:nth-child(3) {
     font-size: var(--section-heading2);
   }
 
+}
+
+/*/////////////// aim box/////////////// */
+
+.aim-section {
+
+    width: 100%;
+    max-width: 62rem;
+    margin-block: 100px;
+}
+
+.aim-box {
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    /* width: 65%; */
+    padding-inline: 50px;
+    padding-block: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-image: url(https://themewagon.github.io/charityworks/assets/img/gallery/section_bg01.png);
+}
+
+.aim-box h1 {
+    font-size: 2rem;
+    color: white;
+    line-height: 50px;
+    width: 50%;
+}
+
+.aim-box button {
+    padding-inline: 50px;
+    padding-block: 20px;
+    border: 0;
+}
+
+@media screen and (max-width:768px) {
+  .aim-box h1 {
+    font-size: 1.5rem;
+    line-height: 30px;
+    width: 100%;
+}
+.aim-box button {
+    padding-inline: 30px;
+    padding-block: 10px;
+    border: 0;
+}
+
+    .aim-section {
+        margin-block: 50px;
+    }
+
+    .aim-box h1 {
+        width: 100%;
+    }
 }

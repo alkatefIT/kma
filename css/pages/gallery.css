@@ -1,11 +1,26 @@
-.about-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-inline: 30px;
+.gallery-section {
+    margin-block: 100px;
 
 }
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-block: 30px;
+    width: 100%;
+    max-width: 62rem;
+}
+
+
 .about-left{
     padding-block: 10%;
     display: flex;

@@ -17,6 +17,13 @@ nav{
 section{
     font-family: "Mulish", sans-serif;
 }
+/* main{
+  background-image: url("./assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
+  background-position: center;
+} */
 
 #back-top {
     background: #09cc7e;

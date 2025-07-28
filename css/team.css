@@ -1,5 +1,4 @@
-main section:nth-child(4) {
-    background-color: #F8FCFF;
+main section:nth-child(3) {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -18,240 +17,73 @@ main section:nth-child(4) {
     font-size: 1.3rem;
     font-weight: 500;
     color: #33df9a;
-    margin-block: 50px;
+    margin-block-end: 20px;
+    margin-block-start: 20px;
     text-decoration: underline;
 
 
 }
 
-.team-section h3 {
-    font-size: 2.5rem;
+
+.committee-section {
+    margin-bottom: 40px;
+    padding: 0 20px;
 }
 
-/* .all-team-card {
-    width: 100%;
-    max-width: 62rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 30px;
+.committee-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
-.team-card {
-    position: relative;
-    background-color: white;
-    width: 300px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.team-card-img {
-    overflow: hidden;
-
-}
-
-.team-social {
-    position: absolute;
-    bottom: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-}
-
-.team-social ul {
-    display: flex;
-    gap: 10px;
-}
-
-.team-card:hover .team-social ul li:nth-child(1) {
-    animation: fadeIn 0.5s ease forwards;
-}
-
-.team-card:hover .team-social ul li:nth-child(2) {
-    animation: fadeIn 0.5s ease forwards 0.2s;
-}
-
-.team-card:hover .team-social ul li:nth-child(3) {
-    animation: fadeIn 0.5s ease forwards 0.4s;
-}
-
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.team-card-img img {
-    transition: transform 0.5s;
-    transform: scale(1);
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.team-card:hover .team-card-img img {
-    transform: scale(1.1);
-}
-
-.team-social li {
-    list-style-type: none;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    opacity: 0;
-
-}
-
-.team-social li a {
-    text-decoration: none;
-    color: inherit;
-
-}
-
-.team-details {
-    margin-block-end: 20px;
-} */
-
-.all-team-card {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Force 3 per row */
     gap: 20px;
-    width: 100%;
-    max-width: 62rem;
-}
-
-.team-card {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    border: 1px solid #ccc;
-    width: 295px;
-    padding: 10px;
-}
-
-.team-card-img img {
-    width: 100px;
-    height: 120px;
-    object-fit: cover;
-}
-
-.team-details h1 {
-    font-size: 1rem;
 }
 
 .person-card {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
-  border-radius: 8px;
-  justify-content: flex-start;
-}
-
-@media (max-width: 550px) {
-  .person-card {
-    flex-direction: column;
-    align-items: center;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
     text-align: center;
-  }
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/*/////////////// aim box/////////////// */
-
-.aim-section {
-
-    width: 100%;
-    max-width: 62rem;
-    margin-block: 100px;
+@media screen and (max-width: 850px) {
+    .members-grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* 2 per row on smaller screens */
+    }
+    .team-section h1 {
+    margin-block-start: 20px;
 }
 
-.aim-box {
-    display: flex;
-    height: auto;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
-    align-items: center;
-    /* width: 65%; */
-    padding-inline: 50px;
-    padding-block: 40px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    background-image: url(https://themewagon.github.io/charityworks/assets/img/gallery/section_bg01.png);
 }
 
-.aim-box h1 {
-    font-size: 2rem;
-    color: white;
-    line-height: 50px;
-    width: 50%;
-}
-
-.aim-box button {
-    padding-inline: 50px;
-    padding-block: 20px;
-    border: 0;
-}
-
-  table {
-    width: 100%;
-    max-width: 62rem;
-
-    border-collapse: collapse;
-  }
-
-  th, td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: left;
-  }
-
-  th {
-    background-color: #f2f2f2;
-  }
-
-@media screen and (max-width:768px) {
-    main section:nth-child(4) {
-        padding-block: 50px;
-        padding-inline: 30px;
+@media screen and (max-width: 600px) {
+    main section:nth-child(3) {
+        padding: 25px;
+        padding-block-end: 50px;
     }
 
-    .team-section h3 {
-        font-size: var(--section-heading2);
+    .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 per row on smaller screens */
     }
 
-    .team-card {
-        width: 85%;
+    .committee-section {
+        padding: 0 0;
+    }
+
+    .committee-section h2 {
+        font-size: 18px;
+    }
+
+    .person-card {
+        font-size: 14px;
 
     }
 
-    .aim-section {
-        margin-block: 50px;
-    }
-
-    .aim-box h1 {
-        width: 100%;
-    }
 }
