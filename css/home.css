@@ -2,6 +2,7 @@ main section:nth-child(1) {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .main-home {

@@ -133,6 +133,8 @@ nav {
         overflow: hidden;
         transition: all 0.5s;
         z-index: 15555;
+        gap: 2rem;
+
     }
 
     .menu-button {

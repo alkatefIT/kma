@@ -56,9 +56,10 @@ main section:nth-child(3) {
         grid-template-columns: repeat(3, 1fr);
         /* 2 per row on smaller screens */
     }
+
     .team-section h1 {
-    margin-block-start: 20px;
-}
+        margin-block-start: 20px;
+    }
 
 }
 

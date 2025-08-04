@@ -1,29 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
 }
-:root{
-    --section-heading:2.5rem;
+
+:root {
+    --section-heading: 2.5rem;
     /* 768px */
-    --section-heading2:1.4rem
-
+    --section-heading2: 1.4rem
 }
 
-nav{
- font-family: "Mulish", sans-serif;
-}
-section{
+nav {
     font-family: "Mulish", sans-serif;
 }
-/* main{
-  background-image: url("./assets/bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; 
-  background-position: center;
-} */
+
+section {
+    font-family: "Mulish", sans-serif;
+}
+
+main {
+    background-image: url('./assets/uae.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+@media screen and (max-width:768px) {
+    main {
+        background-image: none;
+    }
+}
 
 #back-top {
     background: #09cc7e;
@@ -42,11 +49,13 @@ section{
     opacity: 0;
     z-index: 10;
 }
+
 #back-top a {
     text-decoration: none;
     color: white;
 
 }
+
 #back-top.show {
     opacity: 1;
 }
