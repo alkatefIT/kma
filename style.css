@@ -20,7 +20,7 @@ section {
 }
 
 main {
-    background-image: url('./assets/uae.jpg');
+    /* background-image: url('./assets/uae.jpg'); */
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
