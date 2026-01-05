@@ -8,7 +8,8 @@
 :root {
     --section-heading: 2.5rem;
     /* 768px */
-    --section-heading2: 1.4rem
+    --section-heading2: 1.4rem;
+    --main-green-bg: #09cc7e;
 }
 
 nav {
@@ -44,7 +45,7 @@ main {
     text-align: center;
     border-radius: 50%;
     line-height: 48px;
-    border: 2px solid transparent;
+    border: 2px solid white;
     transition: opacity 0.3s ease-in-out;
     opacity: 0;
     z-index: 10;
